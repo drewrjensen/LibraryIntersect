@@ -13,7 +13,12 @@ async function getOwnedGames(steamids) {
             superArray.push(gameArray);
         }
     } catch (error) {
-        document.getElementById('t_display').innerHTML = "Attempt failed. Are all profiles and game lists public?"
+        document.getElementById('t_display').innerHTML =
+        `Attempt failed. Are all profiles and game lists public? <br> <br>
+        Are all SteamIDs in the correct format? <br> <br>
+        Is the list comma separated? <br> <br>
+        Example: 36561198950324187, 76961198650063146, 76151198986614762
+        `
     }
     return superArray;
 }
@@ -33,6 +38,3 @@ function populateTable() {
         });
     });
 }
-
-// 76561198060798137, 76561198050069396, 76561198046614660
-// 76561198050069396, 76561198046614660

@@ -28,6 +28,10 @@ input {
     width: 100%;
 }
 
+input::placeholder {
+    color:black;
+}
+
 table {
     margin-top: 10px;
 }

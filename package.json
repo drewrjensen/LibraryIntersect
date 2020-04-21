@@ -1,6 +1,6 @@
 {
   "name": "libraryintersect",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Generates a table displaying the intersection between Steam libraries",
   "main": "main.js",
   "dependencies": {
