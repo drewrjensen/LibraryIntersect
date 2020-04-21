@@ -1,0 +1,4 @@
+https://developer.valvesoftware.com/wiki/Steam_Web_API#GetOwnedGames_.28v0001.29
+http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=XXXXXXXXXXXXXXXXX&steamid=76561197960434622&format=json
+
+http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=83BB37ACD8C85F98B6DE61D47B4A6716&steamid=76561198060798137&include_appinfo=true&format=json
