@@ -1,5 +1,5 @@
-const {app, BrowserWindow} = require("electron");
-// const XMLHttpRequest = require("XMLHttpRequest");
+const {app, BrowserWindow} = require('electron');
+const fetch = require('electron-fetch').default;
 
 function createWindow() {
     let window = new BrowserWindow({
@@ -8,19 +8,16 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: true
         }
-    })
+    });
 
-    window.loadFile("index.html");
+    // window.webContents.openDevTools();
+    window.loadFile('index.html');
 }
 
-app.whenReady().then(createWindow);
+app.on('ready', () => {
+    createWindow();
+});
 
-function getOwnedGames(steamid) {
-    var url = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=83BB37ACD8C85F98B6DE61D47B4A6716&steamid=" + steamid + "&include_appinfo=true&format=json";
-    var request = new XMLHttpRequest();
-    request.open("GET", url, false);
-    request.send(null);
-    return JSON.parse(request.responseText);
-}
-
-// getOwnedGames(76561198060798137);
+app.on('window-all-closed', () => {
+    app.quit()
+});

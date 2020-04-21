@@ -1,0 +1,47 @@
+* {
+    color: #ccc;
+}
+
+html {
+    background-color: #36393E;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #33363B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3C3F44;
+}
+
+input {
+    background-color: #ccc;
+    color: black;
+    width: 100%;
+}
+
+table {
+    margin-top: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #323539;
+}
+
+th {
+    padding: 2.5px;
+    text-align: center;
+}
+
+td {
+    padding: 2.5px 10px;
+    text-align: left;
+}

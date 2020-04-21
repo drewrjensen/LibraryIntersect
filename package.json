@@ -1,11 +1,14 @@
 {
   "name": "libraryintersect",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generates a table displaying the intersection between Steam libraries",
   "main": "main.js",
-  "dependencies": {},
-  "devDependencies": {
-    "electron": "^8.2.3"
+  "dependencies": {
+    "array-intersection": "^0.1.2",
+    "electron": "^8.2.3",
+    "electron-fetch": "^1.4.0",
+    "fs": "0.0.1-security",
+    "request": "^2.88.2"
   },
   "scripts": {
     "start": "electron ."
