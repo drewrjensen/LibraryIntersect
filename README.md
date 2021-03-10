@@ -1,3 +1,5 @@
+--ARCHIVED--
+
 # LibraryIntersect (Electron)
 
 When given a comma separated list of SteamIDs, will return a list of the games they all own.
