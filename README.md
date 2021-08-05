@@ -1,4 +1,4 @@
-# LibraryIntersect (Electron)
+# LibraryIntersect (Kotlin)
 
 When given a comma separated list of SteamIDs, will return a list of the games they all own.
 Each profile must be public, and have their game details set to public as well.
